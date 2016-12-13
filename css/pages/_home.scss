@@ -1,3 +1,199 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+.sections {
+  width: 100%;
+}
+
+///home-1 section
+.home-1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 36em;
+  background-color: $light-gray;
+}
+
+.home-1 > .col-2:first-child img  {
+  width: 25em;
+  margin: 2.0em;
+}
+
+.home-1 > .col-txt {
+  display: block;
+  font-size: 2em;
+  line-height: 1.2em;
+  text-align: left;
+  max-width: 20em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+///home-2 section
+.home-2 {
+  width: 100%;
+  background-color: $NARlogored;
+  min-height: 40em;
+}
+
+.home-2 {
+  display: flex;
+  width: 100%;
+  min-height: 40em;
+  padding: 3em 10em 3em 10em;
+  background-color: $NARlogored;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: top;
+}
+
+.col-3 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+  color: white;
+  width: 22em;
+  padding: 0 1em 0 1em;
+}
+
+.col-3 h2 {
+  margin: 0 0;
+  font-family: "museo-slab", sans-serif;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.col-3 img {
+  width: 16.5em;
+}
+
+/// home 3 section
+.home-3 {
+  display: flex;
+  width: 100%;
+  min-height: 24em;
+  background-color: white;
+  padding: 1em;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-3 > .col-2 p {
+  display: inline-block;
+  font-size: 1.4em;
+  text-align: right;
+  margin-top: 2em;
+}
+
+.home-3 > .col-2:first-child {
+  padding-right: 2em;
+}
+
+.home-3 > .col-2 > h3 {
+  font-family: $museo-stack;
+  font-size: 2em;
+  color: $NARdkgray;
+  margin: 0em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.home-3 > .col-2 > h5 {
+  font-family: $museo-stack;
+  font-size: .8em;
+  color: $mid-gray;
+  margin: 0em;
+  line-height: .8em;
+  text-transform: uppercase;
+}
+
+.nsc-logo {
+  display: inline-block;
+  margin-top: 1em;
+  vertical-align: top;
+}
+
+.nsc-logo img:first-child {
+  width: 8em;
+}
+
+.nsc-logo img:nth-child(2) {
+  width: 14em;
+  vertical-align: top;
+  padding-top: .6em;
+  padding-left: .4em;
+}
+
+.home-3 > .col-2:nth-child(2) img {
+  width: 38em;
+}
+
+.col-1 { //full width text block
+  width: 100%;
+  padding: 2em;
+}
+
+/// home 4 section (full width)
+.home-4 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 0 2em 1em 2em;
+  background-color: white;
+}
+
+.home-4 > .col-1 {
+  display: inline-block;
+  text-align: center;
+  padding: 0em 3em 1em 3em;
+  font-size: 1.9em;
+}
+
+.home-4 > .col-1:nth-child(2) h4 {
+  margin: 0em;
+  font-family: $museo-stack;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: $dark-gray;
+  -webkit-text-fill-color: $mid-gray;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.home-4 > .col-1:nth-child(2) h3 {
+  margin: 0em;
+  font-family: $museo-stack;
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: $dark-gray;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.home-4 > .col-1:nth-child(2) h3 > span:nth-child(2) {
+  color: black;
+  -webkit-text-fill-color: $NARdkgray;
+}
+
+.home-4 > .col-1:nth-child(2) h3 > span:nth-child(3) {
+  color: red;
+  -webkit-text-fill-color: $NARlogored;
+}
+
+
+///media queries
+@media screen
+and (min-width: 200px)
+and (max-width: 700px) {
+  .mbl-hidden {
+    display: none;
+  }
+}

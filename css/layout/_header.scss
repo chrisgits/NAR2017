@@ -1,3 +1,87 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+nav {
+  display: block;
+  width: 100%;
+  height: 5em;
+}
+
+.brand {
+  display: inline-block;
+  float: left;
+  height: 5em;
+}
+
+.brand img {
+  width: 10em;
+  margin-left: 5em;
+}
+
+.home-menu {
+  display: inline;
+  float: right;
+  margin-right: 3em;
+  padding-top: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+.home-menu ul>li {
+  display: inline-block;
+  list-style-type: inline;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-right: 2em;
+}
+
+.home-menu a {
+  color: white;
+  padding-bottom: .3em;
+  transition: all .2s ease-in-out;
+  border-bottom: 8px hidden $NARlogoblue;
+}
+
+.home-menu a:active {
+  color: $yellow;
+}
+
+.active  a {
+  border-bottom: 8px solid $yellow;
+}
+
+.home-menu a:hover {
+  text-decoration: none;
+  border-bottom: 8px solid $NARlogoblue;
+}
+
+
+.home-jumbotron {
+  display: block;
+  width: 100%;
+  height: 40em;
+  padding-top: 5em;
+  background-color: red;
+  background-image: url("../assets/home-bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  margin-top: -5em;
+}
+
+.headline {
+  display: block;
+  width: 40%;
+  float: right;
+  margin-right: 5em;
+  margin-top: 1em;
+  text-align: right;
+}
+
+.headline h1 {
+  font-family: "museo-slab", serif;
+  color: white;
+  text-transform: uppercase;
+}
