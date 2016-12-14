@@ -13,41 +13,34 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 36em;
+  min-height: 24em;
   background-color: $light-gray;
 }
 
 .home-1 > .col-2:first-child img  {
-  width: 25em;
+  width: 16em;
   margin: 2.0em;
 }
 
 .home-1 > .col-txt {
   display: block;
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1.2em;
   text-align: left;
   max-width: 20em;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1em;
+  padding-right: .5em;
 }
 
 ///home-2 section
 .home-2 {
-  width: 100%;
-  background-color: $NARlogored;
-  min-height: 40em;
-}
-
-.home-2 {
   display: flex;
   width: 100%;
-  min-height: 40em;
-  padding: 3em 10em 3em 10em;
+  min-height: 30em;
+  padding: 1em;
   background-color: $NARlogored;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: top;
 }
 
 .col-3 {
@@ -56,18 +49,22 @@
   align-items: center;
   text-align: center;
   color: white;
-  width: 22em;
-  padding: 0 1em 0 1em;
+  width: 18em;
+  padding: 0em;
 }
 
 .col-3 h2 {
   margin: 0 0;
   font-family: "museo-slab", sans-serif;
-  font-size: 2.5em;
+  font-size: 2.0em;
   text-transform: uppercase;
 }
 
-.col-3 img {
+.home-2 > .col-3 > p {
+  font-size: .9em;
+}
+
+.home-2 > .col-3 img {
   width: 16.5em;
 }
 
@@ -75,28 +72,29 @@
 .home-3 {
   display: flex;
   width: 100%;
-  min-height: 24em;
+  min-height: 14em;
   background-color: white;
-  padding: 1em;
+  padding: 0.5em;
+  padding-top: 1.5em;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .home-3 > .col-2 p {
   display: inline-block;
-  font-size: 1.4em;
+  font-size: .7em;
   text-align: right;
-  margin-top: 2em;
+  margin-top: 3em;
 }
 
 .home-3 > .col-2:first-child {
-  padding-right: 2em;
+  padding-right: 0em;
 }
 
 .home-3 > .col-2 > h3 {
   font-family: $museo-stack;
-  font-size: 2em;
+  font-size: 1.6em;
   color: $NARdkgray;
   margin: 0em;
   line-height: 1em;
@@ -114,28 +112,25 @@
 
 .nsc-logo {
   display: inline-block;
-  margin-top: 1em;
+  margin-top: .5em;
   vertical-align: top;
 }
 
 .nsc-logo img:first-child {
-  width: 8em;
+  width: 5em;
 }
 
-.nsc-logo img:nth-child(2) {
-  width: 14em;
+.nsc-logo img:nth-child(2) { //safety logos
+  width: 9em;
   vertical-align: top;
   padding-top: .6em;
   padding-left: .4em;
 }
 
-.home-3 > .col-2:nth-child(2) img {
-  width: 38em;
-}
-
-.col-1 { //full width text block
+.home-3 > .col-2:nth-child(2) img { //click it sticker
   width: 100%;
-  padding: 2em;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
 }
 
 /// home 4 section (full width)
@@ -143,15 +138,20 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  padding: 0 2em 1em 2em;
+  padding: 0em 2em 2em 2em;
   background-color: white;
 }
 
 .home-4 > .col-1 {
   display: inline-block;
+  width: 100%;
   text-align: center;
-  padding: 0em 3em 1em 3em;
-  font-size: 1.9em;
+  // padding: 0em 3em 1em 3em;
+  // font-size: 1.2em;
+}
+
+.home-4 > .col-1:nth-child(3) h3 > span {
+  display: inline-block;
 }
 
 .home-4 > .col-1:nth-child(2) h4 {
@@ -162,7 +162,7 @@
   text-transform: uppercase;
   color: $dark-gray;
   -webkit-text-fill-color: $mid-gray;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 
@@ -172,9 +172,10 @@
   font-weight: 700;
   font-size: 2em;
   text-transform: uppercase;
+  text-align: center;
   color: $dark-gray;
   -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 
@@ -191,7 +192,6 @@
 
 ///media queries
 @media screen
-and (min-width: 200px)
 and (max-width: 700px) {
   .mbl-hidden {
     display: none;
