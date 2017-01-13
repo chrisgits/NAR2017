@@ -13,23 +13,62 @@ body {
   font-size: 20px;
 }
 
+.back_to_top {
+    background: none;
+    margin: 0;
+    position: fixed;
+    bottom: .2em;
+    right: 0;
+    width: 4em;
+    height: 4em;
+    z-index: 100;
+    display: block;
+    text-decoration: none;
+}
+
+.back_to_top i {
+  font-size: 3em;
+  color: rgba(2, 84, 152, 0.5);
+  transition: color .4s ease;
+}
+
+.back_to_top i:hover {
+  color: rgba(2, 84, 152, 0.80);
+}
+
 .brandtxt {
   font-family: $museo-stack;
   color: $NARdkgray;
   font-weight: 700;
 }
 
-
 @media screen
-and (max-width: 700px) {
+and (max-width: 550px) {
   body {
-    font-size: 16px;
+    font-size: 12px;
+  }
+
+  .home-2 > .col-3 > p {
+    font-size: 1.3em;
+  }
+
+  .mbl-hidden, .sm-hidden {
+    display: none;
+  }
+  .smlogo {
+    display: inline-block;
+    float: left;
+    height: 5em;
   }
 }
 
 @media screen
-and (max-width: 480px) {
+and (min-width: 551px)
+and (max-width: 700px) {
   body {
-    font-size: 12px;
+    font-size: 16px;
+  }
+  .hidden-md, .hidden-lg, .smlogo {
+    display: none;
   }
 }

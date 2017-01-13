@@ -1,0 +1,134 @@
+.content {
+
+}
+
+.team-title {
+  background-image: url("../assets/team_title2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.title-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+}
+
+.title-content > .col-2 {
+  margin-top: 2em;
+}
+
+.title-content > .col-2 > img {
+  height: 15em;
+}
+
+.title-content > .col-2:nth-child(2) {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  max-width: 24em;
+}
+
+.title-content > .col-2:nth-child(2) > p {
+  font-size: .8em;
+  color: #c5c5c5;
+}
+
+.members {
+  display: flex;
+  width: 100%;
+  min-height: 20em;
+  background-color: gray;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  padding: 1em 0 3em 0;
+}
+
+.members h2 {
+  font-size: 2em;
+  font-weight: 200;
+  font-family: $museo-stack;
+  text-transform: uppercase;
+  margin-left: .7em;
+  margin-bottom: 0em;
+}
+
+.teamcard {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $NARdkgray;
+  min-height: 10em;
+  margin: 1em;
+  padding: .4em 1em .5em 1em;
+  border-radius: 1em;
+}
+
+.pic {
+  flex-grow: 1;
+  background-color: $NARdkgray;
+}
+
+.pic img {
+  margin: 1em 1em .7em .7em;
+  border: 2px solid #d1d1d1;
+  border-radius: .5em;
+}
+
+.profile {
+  display: block;
+  flex: 13;
+}
+
+.profile h3 {
+  font-size: 1.5em;
+  color: #dadada;
+  font-family: $museo-stack;
+  font-weight: 200;
+  text-transform: capitalize;
+  margin-top: .5em;
+  margin-bottom: -3px;
+}
+
+.profile h5 {
+  font-size: .8em;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 200;
+  margin: 0 0 .5em 0;
+  color: #b4b4b4;
+  text-transform: uppercase
+}
+
+.profile p {
+  margin-top: .4em;
+  font-size: .7em;
+  color: #9a9a9a;
+
+}
+
+
+@media screen and
+  (max-width: 550px) {
+  .mbl-hidden {
+    display: none;
+  }
+
+  .title-content > .col-2:nth-child(2) {
+    max-width: 26em;
+    font-size: 1em;
+    color: #c5c5c5;
+  }
+
+  .title-content > .col-2:nth-child(2) > p {
+    font-size: 1.3em;
+    color: #c5c5c5;
+  }
+
+  .profile p {
+    font-size: 1.3em;
+  }
+}

@@ -24,11 +24,15 @@
 
 // 5. Components
 @import
-  'components/button';
+  'components/button',
+  'components/pagetitle';
 
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/home',
+  'pages/team',
+  'pages/services',
+  'pages/learn';
 
 // 7. Themes
 @import

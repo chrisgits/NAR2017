@@ -8,8 +8,7 @@ footer {
   justify-content: space-around;
   width: 100%;
   min-height: 20em;
-  background-color: $NARfooter;
-  padding: 2em;
+  background-color: $NARdkgray;
 }
 
 .footer-left {
@@ -34,6 +33,7 @@ footer {
 .footer-center { //NAR main logo
   display: flex;
   align-items: center;
+  padding: 2em 0 2em 0;
 }
 
 .footer-center img {
@@ -46,6 +46,7 @@ footer {
   text-align: center;
   justify-content: center;
   align-items: center;
+  padding-bottom: 1.5em;
 }
 
 .footer-right h5 {
@@ -70,4 +71,53 @@ footer {
 
 .footer-right h4:nth-child(3) > a {
   color: $NARlogoblue;
+}
+
+.legal {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 4em;
+  background-color: #515151;
+  color: #b6b6b6;
+  font-size: .9em;
+  padding: .8em 0 .8em 0;
+}
+
+.pxleng {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  color: #7a7a7a;
+}
+
+.pxleng a {
+  color: #8b8b8b;
+  transition: all .4s ease-in;
+}
+
+.pxleng a:hover {
+  text-decoration: underline solid yellow;
+}
+
+.pxleng img {
+  height: 1.5em;
+  padding: 0 .5em 0 .5em;
+}
+
+
+
+@media screen and
+(max-width: 550px) {
+  .mbl-hidden {
+    display: none !important;
+  }
+}
+
+@media screen and
+(min-width: 551px) {
+  .legal {
+    font-size: 9px;
+  }
 }

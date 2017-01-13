@@ -2,7 +2,7 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
-.sections {
+.section {
   width: 100%;
 }
 
@@ -37,7 +37,7 @@
   display: flex;
   width: 100%;
   min-height: 30em;
-  padding: 1em;
+  padding: 3em 1em 3em 1em;
   background-color: $NARlogored;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -50,7 +50,7 @@
   text-align: center;
   color: white;
   width: 18em;
-  padding: 0em;
+  padding-bottom: 2.5em;
 }
 
 .col-3 h2 {
@@ -116,11 +116,11 @@
   vertical-align: top;
 }
 
-.nsc-logo img:first-child {
+.nsc-logo a:first-child > img {
   width: 5em;
 }
 
-.nsc-logo img:nth-child(2) { //safety logos
+.nsc-logo a:nth-child(2) > img { //safety logos
   width: 9em;
   vertical-align: top;
   padding-top: .6em;
@@ -146,8 +146,6 @@
   display: inline-block;
   width: 100%;
   text-align: center;
-  // padding: 0em 3em 1em 3em;
-  // font-size: 1.2em;
 }
 
 .home-4 > .col-1:nth-child(3) h3 > span {
@@ -190,10 +188,17 @@
 }
 
 
-///media queries
+//media queries
 @media screen
-and (max-width: 700px) {
-  .mbl-hidden {
-    display: none;
+and (max-width: 550px) {
+  .home-4 > .col-1 > p {
+    font-size: 1.1em;
+  }
+}
+
+@media screen
+and (max-width: 999px) {
+  .home-1 > .col-txt {
+    text-align: center;
   }
 }

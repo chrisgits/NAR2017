@@ -3,7 +3,10 @@
 // -----------------------------------------------------------------------------
 
 nav {
-  display: block;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   height: 5em;
 }
@@ -15,26 +18,32 @@ nav {
 }
 
 .brand img {
-  width: 10em;
-  margin-left: 5em;
+  width: 12em;
+  margin-left: .5em;
+  margin-top: .7em;
+}
+
+.smlogo {
+  display: none;
 }
 
 .home-menu {
-  display: inline;
-  float: right;
-  margin-right: 3em;
-  padding-top: 1em;
+  min-width: 17em;
   color: white;
   text-decoration: none;
 }
 
+.home-menu > ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
 .home-menu ul>li {
-  display: inline-block;
-  list-style-type: inline;
+  list-style: none;
   text-transform: uppercase;
-  font-size: .9em;
+  font-size: .7em;
   font-weight: bold;
-  padding-right: 2em;
 }
 
 .home-menu a {
@@ -49,20 +58,19 @@ nav {
 }
 
 .active  a {
-  border-bottom: 8px solid $yellow;
+  border-bottom: .4em solid $yellow;
 }
 
 .home-menu a:hover {
   text-decoration: none;
-  border-bottom: 8px solid $NARlogoblue;
+  border-bottom: .4em solid $NARlogoblue;
 }
 
 .home-jumbotron {
   display: block;
   width: 100%;
   min-height: 24em;
-  padding-top: 5em;
-  background-color: red;
+  padding-top: 4em;
   background-image: url("../assets/home-bg1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,16 +80,75 @@ nav {
 
 .headline {
   display: block;
-  width: 40%;
+  width: 70%;
   float: right;
-  font-size: .9em;
+  font-size: .7em;
   margin-right: 5em;
-  margin-top: 1em;
   text-align: right;
 }
 
 .headline h1 {
+  margin: 0;
+  padding-top: 1em;
   font-family: "museo-slab", serif;
   color: white;
   text-transform: uppercase;
+}
+
+/// > MOBILE SCREEN SIZE
+@media screen
+and (max-width: 481) {
+  .smlogo img {
+    width: 5em;
+  }
+}
+
+/// MOBILE SCREEN
+@media screen
+and (max-width: 550px) {
+  body {
+    font-size: 12px;
+  }
+
+  .brand {
+    display: block;
+  }
+
+  .brand img {
+    margin-left: 5%;
+  }
+
+  .home-jumbotron {
+    background-image: none;
+    min-height: 10em;
+  }
+
+  .home-menu {
+
+  }
+
+  .smlogo img {
+    display: none;
+    width: 5em;
+    margin-top: 1.5em;
+    margin-left: 20%;
+  }
+
+  .headline {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+    margin-right: 0em;
+    padding-bottom: 3em;
+  }
+}
+
+
+
+@media screen
+and (max-width: 700px) {
+  body {
+    font-size: 16px;
+  }
 }
