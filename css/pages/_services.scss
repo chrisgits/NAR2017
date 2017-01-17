@@ -1,1 +1,299 @@
 //styles for services page
+
+.services-sect {
+  background-image: url('../assets/hwyskybg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.service-head h1 {
+  font-size: 1.5em;
+  margin: 1em 0 0 0;
+}
+
+.title-content {
+  padding: 1em 6em;
+
+}
+.title-content > h3 {
+  text-align: center;
+  font-size: 1.8em;
+  text-shadow: 2px 2px 2px white;
+}
+
+//CDR section
+.cdr {
+  width: 100%;
+  background-color: #343434;
+  padding: 2em;
+  color: white;
+  border-top: 5px solid $yellow;
+}
+
+.cdr h2 {
+  font-family: $museo-stack;
+  text-align: center;
+  margin: 0em;
+  font-weight: 200;
+  color: white;
+}
+
+.cdr h3 {
+  font-family: $museo-stack;
+  text-align: center;
+  margin: 0em;
+  font-weight: 200;
+}
+
+.cdr > h3 > span {
+  color: #e2001a;
+  font-family: 'acumin-pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin-right: .2em;
+  margin-bottom: 0em;
+}
+
+.cdr > h3 > span > img {
+  width: 1em;
+  margin-left: .2em;
+  margin-right: .2em;
+  position: relative;
+  top: 3px;
+}
+
+.cdrsub1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  font-family: 'acumin-pro', sans-serif;
+  font-weight: 200;
+}
+
+.cdrsub1 span > img {
+  width: 100%;
+  border-radius: 1em;
+}
+.cdrsub1 p,span {
+  display: inline-block;
+}
+.cdrsub1 p {
+  flex: .9;
+}
+
+.cdrsub2 {
+  width: 100%;
+  font-family: 'acumin-pro', sans-serif;
+}
+
+.warn {
+  font-size: 0.8em;
+  color: $yellow;
+  text-align: center;
+}
+
+//video wrapper for fluid sizing of iframe vids
+.vidwrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.vidwrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+//SERVICES section
+.services {
+  width: 100%;
+  background-color: #1d1d1d;
+  padding: 2em;
+  color: white;
+  border-top: 5px solid $yellow;
+  font-family: $museo-stack;
+}
+
+.services > h2 {
+  margin: 0;
+  padding: 0;
+  font-family: $museo-stack;
+  font-weight: 200;
+}
+
+.services > h4 {
+  margin: 0;
+  padding: 0;
+  font-family: $museo-stack;
+  font-weight: 200;
+}
+
+.services > h5 {
+  margin: 0;
+  padding: 0;
+  font-family: $museo-stack;
+  font-weight: 200;
+}
+
+.services > p {
+  margin: 0;
+  padding: 0;
+  font-family: $museo-stack;
+  font-weight: 200;
+}
+
+.services > h2 {
+  font-size: 2em;
+  color: #d1d1d1;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.services h4 {
+  font-size: 1.7em;
+  color: #d1d1d1;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1em;
+}
+.services h5 {
+  font-size: 1.3em;
+  color: #95989a;
+  text-transform: uppercase;
+}
+.services p {
+  font-size: 1em;
+  color: #ac9012;
+  padding-left: 1em;
+}
+
+.services > h5 > span {
+  font-size: .8em !important;
+}
+
+.services a:hover {
+  color: $yellow;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+
+//CadZone section
+.cadzone {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: #1d1d1d;
+  padding: 2em;
+  color: white;
+  border-top: 5px solid $yellow;
+  font-family: $museo-stack;
+  text-align: center;
+}
+
+.cadzone > h2 {
+  font-size: 2.0em;
+  color: #459be8;
+  font-family: $museo-stack;
+  text-align: center;
+}
+
+.cadzone > h4 {
+  font-size: 1.1em;
+  color: white;
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
+.dateblock {
+  display: inline-block;
+  width: 90%;
+  min-height: 2em;
+  background-color: white;
+  border-radius: .3em;
+  margin-bottom: 1em;
+  padding: .5em;
+  color: $NARdkgray;
+  text-align: left;
+}
+
+.location {
+  display: block;
+  font-family: $text-font-stack;
+  font-size: .8em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.date {
+  display: block;
+  font-family: $museo-stack;
+  font-size: 1.6em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.city {
+  font-family: $text-font-stack;
+  font-size: .8em;
+  color: #777777 ;
+}
+
+.courselink {
+  display: block;
+  float: right;
+  z-index: 100;
+  width: 5em;
+  height: 1.7em;
+  background-color: red;
+  color: white;
+  text-align: center;
+  line-height: 1.7em;
+  vertical-align: middle;
+  border-radius: 3px;
+}
+
+.faro {
+  display: block;
+  width: 83%;
+  margin-top: 4em;
+  padding-right: 4.5em;
+}
+
+.faro img {
+  width: 100%;
+  border-radius: .4em;
+}
+
+#tripod img {
+  position: absolute;
+  bottom: 0px;
+  right: .5em;
+  width: 13em;
+}
+
+
+
+
+
+
+
+@media screen and
+(max-width: 420px) {
+  .cdr .services {
+    padding: 0.5em;
+  }
+
+  .service-head h1 {
+    font-size: 1.0em;
+  }
+}

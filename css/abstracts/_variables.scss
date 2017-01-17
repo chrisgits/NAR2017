@@ -2,10 +2,6 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-
-
-
-
 /// Regular font family
 /// @type List
 $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
@@ -16,9 +12,6 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 
 /// Rockwell font family
 $museo-stack: 'museo-slab', sans-serif;
-
-
-
 
 /// Copy text color
 /// @type Color
@@ -40,7 +33,6 @@ $mid-gray: rgb(139, 139, 139) !default;
 /// @type Color
 $dark-gray: rgb(29, 29, 29) !default;
 
-
 /// NAR brand/site colors
 $NARdkgray: rgb(29, 29, 29); ///#1d1d1d
 $NARlogoblue: rgb(2, 84, 152); ///#025498
@@ -48,14 +40,9 @@ $NARlogored: rgb(180, 32, 37); ///#b42025
 $NARfooter: rgb(52, 52, 52); ///#343434
 $yellow: rgb(254, 205, 6);
 
-
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
-
-
-
-
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
@@ -65,11 +52,6 @@ $breakpoints: (
   'medium': 768px,
   'large': 1024px,
 ) !default;
-
-
-
-
-
 
 /// Relative or absolute URL where all assets are served from
 /// @type String

@@ -13,6 +13,15 @@ body {
   font-size: 20px;
 }
 
+video {
+  width: 100% !important;
+  height: auto !important;
+}
+
+a:visited {
+  color: $yellow;
+}
+
 .back_to_top {
     background: none;
     margin: 0;

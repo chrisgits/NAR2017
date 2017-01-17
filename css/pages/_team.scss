@@ -1,6 +1,4 @@
-.content {
-
-}
+//styles for team page
 
 .team-title {
   background-image: url("../assets/team_title2.png");
@@ -33,6 +31,7 @@
 }
 
 .title-content > .col-2:nth-child(2) > p {
+  font-family: 'acumin-pro', sans-serif;
   font-size: .8em;
   color: #c5c5c5;
 }
@@ -45,6 +44,7 @@
   flex-flow: column nowrap;
   justify-content: space-around;
   padding: 1em 0 3em 0;
+  font-family: $text-font-stack;
 }
 
 .members h2 {
@@ -85,13 +85,13 @@
 }
 
 .profile h3 {
-  font-size: 1.5em;
+  font-size: 1.6em;
   color: #dadada;
   font-family: $museo-stack;
   font-weight: 200;
   text-transform: capitalize;
   margin-top: .5em;
-  margin-bottom: -3px;
+  margin-bottom: -2px;
 }
 
 .profile h5 {
@@ -129,6 +129,6 @@
   }
 
   .profile p {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 }
