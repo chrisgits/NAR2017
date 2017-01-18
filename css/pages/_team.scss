@@ -126,8 +126,12 @@
 //Contact section
 .contact {
   display: block;
-  width: 100%;
+  width: 100vw;
+  min-height: calc(100vw/2.1);
   background-color: #343434;
+  background-image: url('../assets/surveyMarker.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #c9c9c9;
   font-family: $text-font-stack;
   text-align: center;
@@ -138,11 +142,21 @@
   display: inline-block;
   width: 60vw;
   margin: 0;
+  color: $NARdkgray;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px white;
 }
 
 .contact h4 {
   font-size: 1.4em;
   margin: .7em 0;
+  color: $NARdkgray;
+  text-shadow: 2px 2px 1px white;
+}
+
+.contact a {
+	text-shadow: 2px 2px .5px black;
 }
 
 
