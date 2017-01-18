@@ -12,23 +12,18 @@ nav {
 }
 
 .brand {
-  display: inline-block;
-  float: left;
   height: 5em;
+  line-height: 5em;
 }
 
 .brand img {
-  width: 12em;
+  height: 4.5em;
   margin-left: .5em;
-  margin-top: .7em;
-}
-
-.smlogo {
-  display: none;
+  vertical-align: middle;
 }
 
 .home-menu {
-  min-width: 17em;
+  min-width: 14em;
   color: white;
   text-decoration: none;
 }
@@ -37,12 +32,14 @@ nav {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
+  padding-left: 0;
 }
 
 .home-menu ul>li {
   list-style: none;
   text-transform: uppercase;
-  font-size: .7em;
+  font-family: $museo-stack;
+  font-size: .8em;
   font-weight: bold;
 }
 
@@ -68,8 +65,8 @@ nav {
 
 .home-jumbotron {
   display: block;
-  width: 100%;
-  min-height: 24em;
+  width: 100vw;
+  min-height: calc(100vw/2.1);
   padding-top: 4em;
   background-image: url("../assets/home-bg1.jpg");
   background-repeat: no-repeat;
@@ -95,14 +92,6 @@ nav {
   text-transform: uppercase;
 }
 
-/// > MOBILE SCREEN SIZE
-@media screen
-and (max-width: 481) {
-  .smlogo img {
-    width: 5em;
-  }
-}
-
 /// MOBILE SCREEN
 @media screen
 and (max-width: 550px) {
@@ -110,28 +99,18 @@ and (max-width: 550px) {
     font-size: 12px;
   }
 
-  .brand {
-    display: block;
-  }
+  .home-menu ul>li {
+    font-size: .9em;
 
-  .brand img {
-    margin-left: 5%;
   }
+  //
+  // .active {
+  //   border-bottom: .3em solid $yellow;
+  // }
 
   .home-jumbotron {
     background-image: none;
     min-height: 10em;
-  }
-
-  .home-menu {
-
-  }
-
-  .smlogo img {
-    display: none;
-    width: 5em;
-    margin-top: 1.5em;
-    margin-left: 20%;
   }
 
   .headline {

@@ -9,10 +9,10 @@
 
 .service-head h1 {
   font-size: 1.5em;
-  margin: 1em 0 0 0;
+  margin: 0 0 0 0;
 }
 
-.title-content {
+.services-sect ~ .title-content {
   padding: 1em 6em;
 
 }
@@ -28,7 +28,6 @@
   background-color: #343434;
   padding: 2em;
   color: white;
-  border-top: 5px solid $yellow;
 }
 
 .cdr h2 {
@@ -281,12 +280,6 @@
   width: 13em;
 }
 
-
-
-
-
-
-
 @media screen and
 (max-width: 420px) {
   .cdr .services {
@@ -294,6 +287,10 @@
   }
 
   .service-head h1 {
-    font-size: 1.0em;
+    font-size: 1.4em;
+    margin: 0px;
+    padding: 0.4em 0 0 0;
+    line-height: 1.5em;
+    vertical-align: middle;
   }
 }

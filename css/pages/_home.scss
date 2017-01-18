@@ -24,12 +24,13 @@
 
 .home-1 > .col-txt {
   display: block;
+  font-family: $text-font-stack;
   font-size: 1.5em;
   line-height: 1.2em;
   text-align: left;
   max-width: 20em;
   padding-left: 1em;
-  padding-right: .5em;
+  padding-right: 1em;
 }
 
 ///home-2 section
@@ -37,8 +38,9 @@
   display: flex;
   width: 100%;
   min-height: 30em;
-  padding: 3em 1em 3em 1em;
+  padding: 3em 1em 0em 1em;
   background-color: $NARlogored;
+  font-family: $text-font-stack;
   flex-flow: row wrap;
   justify-content: space-around;
 }
@@ -49,7 +51,7 @@
   align-items: center;
   text-align: center;
   color: white;
-  width: 18em;
+  width: 15em;
   padding-bottom: 2.5em;
 }
 
@@ -61,11 +63,11 @@
 }
 
 .home-2 > .col-3 > p {
-  font-size: .9em;
+  font-size: .8em;
 }
 
 .home-2 > .col-3 img {
-  width: 16.5em;
+  // width: 16.5em;
 }
 
 /// home 3 section
@@ -191,6 +193,11 @@
 //media queries
 @media screen
 and (max-width: 550px) {
+  .home-2 > .col-3 {
+    width: 100%;
+  }
+
+
   .home-4 > .col-1 > p {
     font-size: 1.1em;
   }

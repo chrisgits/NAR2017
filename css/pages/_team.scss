@@ -10,13 +10,13 @@
 .title-content {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 1em;
 }
 
 .title-content > .col-2 {
-  margin-top: 2em;
+  margin-right: 2em;
 }
 
 .title-content > .col-2 > img {
@@ -27,7 +27,7 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
-  max-width: 24em;
+  max-width: 25em;
 }
 
 .title-content > .col-2:nth-child(2) > p {
@@ -58,6 +58,7 @@
 
 .teamcard {
   display: flex;
+  position: relative;
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
@@ -66,6 +67,19 @@
   margin: 1em;
   padding: .4em 1em .5em 1em;
   border-radius: 1em;
+}
+
+.contactbtn {
+  position: absolute;
+  width: 6em;
+  min-height: 1em;
+  background-color: orange;
+  color: black;
+  border-radius: .2em;
+  padding: .4em;
+  text-align: center;
+  top: 1.0em;
+  right: 1.2em;
 }
 
 .pic {
@@ -107,7 +121,28 @@
   margin-top: .4em;
   font-size: .7em;
   color: #9a9a9a;
+}
 
+//Contact section
+.contact {
+  display: block;
+  width: 100%;
+  background-color: #343434;
+  color: #c9c9c9;
+  font-family: $text-font-stack;
+  text-align: center;
+  padding: 3em 1em;
+}
+
+.contact p {
+  display: inline-block;
+  width: 60vw;
+  margin: 0;
+}
+
+.contact h4 {
+  font-size: 1.4em;
+  margin: .7em 0;
 }
 
 
@@ -115,6 +150,13 @@
   (max-width: 550px) {
   .mbl-hidden {
     display: none;
+  }
+  .title-sect {
+    // margin: .3em 0 .3em 0;
+  }
+
+  .title-content > .col-2 {
+    margin: .3em 0 .3em 0;
   }
 
   .title-content > .col-2:nth-child(2) {
@@ -124,6 +166,7 @@
   }
 
   .title-content > .col-2:nth-child(2) > p {
+    font-family: $text-font-stack;
     font-size: 1.3em;
     color: #c5c5c5;
   }
@@ -131,4 +174,11 @@
   .profile p {
     font-size: 1.2em;
   }
+
+  .contact p {
+    width: 90vw;
+    font-size: 1.3em;
+  }
+
+
 }
