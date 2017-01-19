@@ -29,7 +29,7 @@ footer {
 }
 
 .footer-left img {
-  width: 9em;
+  width: 7em;
 }
 
 .footer-center { //NAR main logo
@@ -39,40 +39,42 @@ footer {
 }
 
 .footer-center img {
-  width: 15em;
+  width: 10em;
 }
 
 .footer-right {
   display: flex;
   flex-flow: column nowrap;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 1.5em;
+  justify-content: space-around;
+  font-family: $text-font-stack;
+  color: white;
 }
 
 .footer-right h5 {
   margin: 0em;
-  font-family: 'helvetica-neue', sans-serif;
+  font-family: $text-font-stack;
   font-size: .8em;
   color: $light-gray;
-  font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 4em;
+  text-align: center;
 }
 
 .footer-right h4 {
   margin: 0em;
-  font-family: $museo-stack;
-  font-size: 1.2em;
-}
-
-.footer-right h4:nth-child(2) {
-  color: $yellow;
+  font-family: $text-font-stack;
+  font-size: .8em;
+  font-weight: 200;
 }
 
 .footer-right h4:nth-child(3) > a {
-  color: $NARlogoblue;
+  color: white;
+}
+
+.address p {
+  margin: 0;
+  font-size: .8em;
+  font-weight: 200;
+  text-align: right;
 }
 
 .legal {
