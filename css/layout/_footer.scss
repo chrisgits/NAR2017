@@ -16,20 +16,27 @@ footer {
 .footer-left {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 0 .5em 0 .5em;
 }
 
 .footer-left h3 {
   color: $light-gray;
+  font-family: $text-font-stack;
+  font-weight: 400;
   text-transform: uppercase;
-  font-size: .8em;
-  margin: 0em;
+  font-size: .6em;
+  margin: 0 0 1em 0;
 }
 
 .footer-left img {
-  width: 7em;
+  width: 5em;
+}
+
+.footer-left a:first-of-type > img {
+  width: 8em;
+  margin-bottom: 1em;
 }
 
 .footer-center { //NAR main logo
@@ -45,15 +52,15 @@ footer {
 .footer-right {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  justify-content: center;
   font-family: $text-font-stack;
   color: white;
 }
 
 .footer-right h5 {
-  margin: 0em;
+  margin: 0 0 1em 0;
   font-family: $text-font-stack;
-  font-size: .8em;
+  font-size: .7em;
   color: $light-gray;
   text-transform: uppercase;
   text-align: center;
@@ -62,7 +69,7 @@ footer {
 .footer-right h4 {
   margin: 0em;
   font-family: $text-font-stack;
-  font-size: .8em;
+  font-size: .6em;
   font-weight: 200;
 }
 
@@ -72,7 +79,7 @@ footer {
 
 .address p {
   margin: 0;
-  font-size: .8em;
+  font-size: .6em;
   font-weight: 200;
   text-align: right;
 }
@@ -84,7 +91,7 @@ footer {
   align-items: center;
   width: 100%;
   min-height: 4em;
-  background-color: #515151;
+  background-color: #282828;
   color: #b6b6b6;
   font-size: .9em;
   padding: .8em 0 .8em 0;
