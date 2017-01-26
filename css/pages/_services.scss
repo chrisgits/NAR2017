@@ -119,6 +119,7 @@
   color: white;
   border-top: 5px solid $yellow;
   font-family: $museo-stack;
+  list-style: circle;
 }
 
 .services > h2 {
@@ -126,6 +127,20 @@
   padding: 0;
   font-family: $museo-stack;
   font-weight: 200;
+}
+
+.services > ul {
+  padding-left: 1.2em;
+}
+
+.services > ul > li {
+  margin: 0;
+  padding: 0;
+  font-family: $museo-stack;
+  font-weight: 200;
+  font-size: 1.3em;
+  color: #95989a;
+  text-transform: uppercase;
 }
 
 .services > h4 {
@@ -164,15 +179,12 @@
   text-align: center;
   margin-top: 1em;
 }
-.services h5 {
-  font-size: 1.3em;
-  color: #95989a;
-  text-transform: uppercase;
-}
+
 .services p {
   font-size: 1em;
   color: #ac9012;
-  padding-left: 1em;
+  padding-left: 0em;
+  margin: 0;
 }
 
 .services > h5 > span {
