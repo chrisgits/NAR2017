@@ -77,6 +77,30 @@ footer {
   color: white;
 }
 
+.footer-nav {
+  display: flex;
+}
+
+.footer-nav ul {
+  display: flex;
+  padding: 0;
+}
+
+.footer-nav ul > li {
+  list-style-type: none;
+}
+
+.footer-nav ul > li:first-child:after {
+  content: '|';
+  padding-left: .4em;
+  padding-right: .5em;
+}
+
+.footer-nav ul > li:nth-child(2):after {
+  content: ' | ';
+  padding-right: .5em;
+}
+
 .address p {
   margin: 0;
   font-size: .6em;
